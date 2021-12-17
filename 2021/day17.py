@@ -51,7 +51,6 @@ def check_velocity(velocity):
 
 velocities = []
 for yspeed in reversed(range(lowestyvelocity, 300)):
-    print('yspeed: ', yspeed)
     for xspeed in range(lowestxvelocity-1, highestxvelocity+1):
         result = check_velocity([xspeed, yspeed])
         if result:
